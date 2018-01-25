@@ -4,5 +4,8 @@ header {
 footer {
   background: darkblue; }
 
+p {
+  font-family: FontAwesome; }
+
 body {
   background: salmon; }
