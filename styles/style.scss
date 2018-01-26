@@ -1,5 +1,5 @@
-@import "components/header";
 @import "components/theme";
+@import "components/header";
 @import "components/footer";
 
 // === HOME PAGE STARTS ===
@@ -49,4 +49,8 @@
 
 body{
     background: salmon;
+}
+
+p{
+    color: blue;
 }
