@@ -1,18 +1,21 @@
+@import "components/normalize";
 @import "components/theme";
-@import "components/header";
-@import "components/footer";
+@import "components/home";
+@import "components/courses";
 
-// === HOME PAGE STARTS ===
-// === END HOME PAGE ===
 
-// === COURSES STARTS ===
-// --- START Courses Title ---
-// --- END Courses Title ---
-// --- START Courses Nav ---
-// --- END Courses Nav ---
-// --- START Courses Main ---
-// --- END Courses Main ---
-// === COURSES ENDS ===
+html{
+    font-size: 62.5%;
+    font-family: "raleway", sans-serif;
+    font-weight: 400;
+}
+
+.wrapper{
+    max-width: 1170px;
+    width: 95%;
+    margin: 0 auto;
+}
+
 
 // === GALLERY STARTS ===
 // --- START gallery Title ---
@@ -44,13 +47,3 @@
 // --- START Pricing main ---
 // --- END Pricing main ---
 // === PRICING ENDS ===
-
-
-
-body{
-    background: salmon;
-}
-
-p{
-    color: blue;
-}

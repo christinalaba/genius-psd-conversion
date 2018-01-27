@@ -1,0 +1,144 @@
+// === HEADER STARTS ===
+// --- START Contact Bar ---
+.contact-bar{
+    background-color: #252525;
+    color: white;  
+    font-weight: $light;  
+    padding: 20px 0;
+    font-size: 1.2rem;
+}
+
+.contact-text, .logo, .login{
+    width: 33.33%;
+    float: left;
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-text{
+        p{
+            padding-right: 40px;
+        }
+}
+
+.contact-text{
+        svg{
+            color: $accentColor;
+            margin-right: 10px;
+        }
+}
+
+.contact-bar{
+        .logo{
+            text-align: center;
+        }
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.login{
+    p{
+        padding-left: 15px;
+        margin-left: 15px;
+    }
+}
+
+
+.login p + p{
+    border-left: 1px solid white;
+}
+
+// --- END Contact bar ---
+
+
+// --- START nav bar ---
+.main-nav{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: $bold;
+    justify-content: center;
+    
+}
+
+.main-nav {
+    li{
+        transition: all 0.2s;
+        
+        a{
+            text-decoration: none;
+            color: inherit;
+            padding-right: 50px;
+        }
+        
+        &:last-child{
+            margin-left: 25px;
+        }
+
+        &:hover{
+            color: $accentColor;
+        }
+        &:focus{
+            color: $accentColor;
+        }
+        &:active{
+            position: relative;
+            bottom: -2px;
+            right: -2px;
+        }
+
+    }
+}
+
+// --- END nav bar ---
+// === HEADER ENDS ===
+
+
+// === HOME PAGE STARTS ===
+header {
+    background-image: url("/assets/hero-image.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.header-text-block{
+    width: 100%;
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        h1{
+            color: #242c42;
+            font-size: 7.2rem;
+            font-weight: $bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p{
+            text-align: center;
+            font-size: 1.8rem;
+            background: radial-gradient(#d9dce7cc 30%, transparent 60%);    
+        }
+        .button-primary{
+            margin-top: 50px;
+                a{
+                    @include primaryButton(300px);
+                }
+        }
+
+}
+
+
+// === END HOME PAGE ===

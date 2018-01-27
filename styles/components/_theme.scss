@@ -1,22 +1,58 @@
 
-
-// header bk: #252525
-
-// green colour:#86bc42
-
-// news backgrounds /differents section: #f4f6fa
-
-// diff circles: #fafbfd
+$accentColor:#86bc42;
 
 // gallery / pricing background: #f0f2f7
+$bkgrey: #f0f2f7;
+// news backgrounds /differents section: #f4f6fa
+$bkblue:#f4f6fa ;
 
-// main footer:#252525
+$facebook:#3b5999;
+$twitter:#00abf1;
+$google: #e12f2f;
+$instagram: #865045;
+
+$thin: 100;
+$light: 300;
+$bold: 700;
+
+
+@mixin headerPrimary{
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+@mixin headerSecondry{
+    font-size: 1.802rem;
+    text-align: center;
+}
+
+@mixin primaryButton ($buttonWidth){
+    width: $buttonWidth;
+    background-color: $accentColor;
+    font-weight: $bold;
+    font-size: 1.4rem;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+}
+
+
+// sass notes:
+//Make the file.
+//Save the file.
+//Delete the css file.
+//Import the file in main.
+
+
+// header: #252525;
+// main footer:#252525;
+
+// diff circles: #fafbfd
 
 // profile circle: #b7b7b7
 
 // PLUS ICON + :#363636
 
-// fb: #3b5999
-// twitter:#00abf1
-// google: #e12f2f
-// instagram: #865045

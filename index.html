@@ -9,21 +9,23 @@
     
     <link rel='stylesheet' type='text/css' href='styles/style.css'>
     <script defer src='https://use.fontawesome.com/releases/v5.0.4/js/all.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway:100,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
     
 <body>
 
 <!-- === HEADER STARTS === -->
 <!-- - START Contact Bar - -->
 <div class="contact-bar">
-    <div class="wrapper">
+    <div class="wrapper clearfix">
         <div class="contact-text">
             <i class="fas fa-phone"></i>
             <p>(541) 754-3010</p>
             <i class="far fa-envelope"></i>
             <p>conact@com.vn</p>
         </div>
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Genius logo">
+        </div>
         <div class="login">
             <p>Register</p>
             <p>Login</p>
@@ -34,18 +36,18 @@
 
 <!-- - START nav bar - -->
 <div class="wrapper">
-    <nav class="main-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="">Pages</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="">Features</a></li>
-        <li><a href="">Shop</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="">Events</a></li>
-        <li>
-            <i class="fas fa-shopping-cart"></i>
-            <i class="fas fa-search"></i>
-        </li>
+    <nav>
+        <ul class="main-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="">Events</a></li>
+            <li><i class="fas fa-shopping-cart"></i></li>
+            <li><i class="fas fa-search"></i></li>
+        </ul>
     </nav><!-- /. main-nav -->
 </div><!-- /.wrapper -->
 <!-- - END nav bar - -->
@@ -55,10 +57,12 @@
 <!-- === HOME PAGE STARTS === -->
 <header>
     <div class="wrapper">
-        <h1>Developing Skills</h1>
-        <p>Quisque consequat justo sed sapien mollis, at placerat ligula commodo. Profin finibus quis arcu aliquam egestas. Morbi mlestie elit sed ligula volutpat cursus. Sed mollis porttitor luctus.</p>
-        <div class="button-primay">
-            <a href="">Start Learning Now!</a>
+        <div class="header-text-block">
+            <h1>Developing<br>Skills</h1>
+            <p>Quisque consequat justo sed sapien mollis, at placerat ligula commodo. Profin finibus quis arcu aliquam<br>egestas. Morbi mlestie elit sed ligula volutpat cursus. Sed mollis porttitor luctus.</p>
+            <div class="button-primary">
+                <a href="">Start Learning Now !</a>
+            </div>
         </div>
     </div><!-- /. wrapper -->
 </header><!-- /.header -->
@@ -67,7 +71,7 @@
 <!-- === COURSES STARTS === -->
 <!-- - START Courses Title - -->
 <div id="courses">
-    <div class="wrapper"></div>
+    <div class="wrapper">
         <div class="section-title">
             <h3>Touch them if you want</h3>
             <h2>Trending Courses</h2>
@@ -87,73 +91,90 @@
 <!-- - END Courses Nav - -->
 
 <!-- - START Courses Main - -->
-        <div class="course-container">
+        <div class="course-container clearfix">
             
             <div class="course">
                 <img src="./assets/reading-on-dock.jpg" alt="girl reading on a dock">
-                <p class="course-title">Course in Expert bartend-<br>er and modern cocktail</p>
-                <div class="profile-photo"></div>
-                <p class="name">Clive Bradley</p>
-                <p class="profile-link">View profile</p>
+                <div class="course-text-block">
+                    <p class="course-title">Course in Expert bartender and modern cocktail</p>
+                    <div class="profile-photo"></div>
+                    <p class="name">Clive Bradley</p>
+                    <p class="profile-link">View profile</p>
+                </div>
             </div>
             
             <div class="course">
                 <img src="./assets/library-search.jpg" alt="girl searching through a library shelf">
-                <p class="course-title">Fashion Styling and Pho-<br>tography course</p>
-                <div class="profile-photo"></div>
-                <p class="name">Cedric Chapman</p>
-                <p class="profile-link">View profile</p>
+                <div class="course-text-block">
+                    <p class="course-title">Fashion Styling and Photography course</p>
+                    <div class="profile-photo"></div>
+                    <p class="name">Cedric Chapman</p>
+                    <p class="profile-link">View profile</p>
+                </div>
             </div>
             
             <div class="course">
                 <img src="./assets/writing-with-coffee.jpg" alt="person writing with coffee in the background">
-                <p class="course-title">Management Develop-<br>ment Programs</p>
-                <div class="profile-photo"></div>
-                <p class="name">Chad Cecil</p>
-                <p class="profile-link">View profile</p>
+                <div class="course-text-block">
+                    <p class="course-title">Management Development Programs</p>
+                    <div class="profile-photo"></div>
+                    <p class="name">Chad Cecil</p>
+                    <p class="profile-link">View profile</p>
+                </div>
             </div>
 
             <div class="course">
                 <img src="./assets/learning.jpg" alt="person learning in a cafe">
-                <p class="course-title">Learn English with wed-<br>sites</p>
-                <div class="profile-photo"></div>
-                <p class="name">Henry Cary</p>
-                <p class="profile-link">View profile</p>
+                <div class="course-text-block">
+                    <p class="course-title">Learn English with<br> wedsites</p>
+                    <div class="profile-photo"></div>
+                    <p class="name">Henry Cary</p>
+                    <p class="profile-link">View profile</p>
+                </div>
             </div>
 
             <div class="course">
                 <img src="./assets/signing-documents.jpg" alt="person writing with a fancy pen">
-                <p class="course-title">Digital Graphic Design<br>Fundamentals</p>
-                <div class="profile-photo"></div>
-                <p class="name">Bowen Brent</p>
-                <p class="profile-link">View profile</p>
+                <div class="course-text-block">
+                    <p class="course-title">Digital Graphic Design Fundamentals</p>
+                    <div class="profile-photo"></div>
+                    <p class="name">Bowen Brent</p>
+                    <p class="profile-link">View profile</p>
+                </div>
             </div>
 
             <div class="course">
                 <img src="./assets/bed-reading.jpg" alt="women reading in bed">
-                <p class="course-title">Fashion &#38; Luxury Goods<br>Management Course</p>
-                <div class="profile-photo"></div>
-                <p class="name">Bruce Awel</p>
-                <p class="profile-link">View profile</p>
+                <div class="course-text-block">
+                    <p class="course-title">Fashion &#38; Luxury Goods Management Course</p>
+                    <div class="profile-photo"></div>
+                    <p class="name">Bruce Awel</p>
+                    <p class="profile-link">View profile</p>
+                </div>
             </div>
 
             <div class="course">
                 <img src="./assets/laptop-typing.jpg" alt="typing on a laptop">
-                <p class="course-title">Write Professional Emails<br>in English</p>
-                <div class="profile-photo"></div>
-                <p class="name">Arvel Baird</p>
-                <p class="profile-link">View profile</p>
+                <div class="course-text-block">
+                    <p class="course-title">Write Professional Emails in English</p>
+                    <div class="profile-photo"></div>
+                    <p class="name">Arvel Baird</p>
+                    <p class="profile-link">View profile</p>
+                </div>
             </div>
             
             <div class="course">
                 <img src="./assets/writing-on-ledge.jpg" alt="man writing whiel sitting on a ledge">
-                <p class="course-title">Master Class - Digital Ac-<br>celebration Course</p>
-                <div class="profile-photo"></div>
-                <p class="name">Aubrey Austin</p>
-                <p class="profile-link">View profile</p>
+                <div class="course-text-block">
+                    <p class="course-title">Master Class - Digital Accelebration Course</p>
+                    <div class="profile-photo"></div>
+                    <p class="name">Aubrey Austin</p>
+                    <p class="profile-link">View profile</p>
+                </div>
             </div>
 
         </div>
+
     </div><!-- /. wrapper -->
 </div><!-- /. #courses -->
 <!-- - END Courses Main - -->
