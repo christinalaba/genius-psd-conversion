@@ -13,13 +13,20 @@
         font-size: 3.6rem;
         margin:10px 0 25px 0;
     }
-    // img{
-    //     &::before{
-    //         content: "";
-    //         width: 50px;
-    //         border-top: 1px solid red;
-    //     }
-    // }
+  
+    .book-line{
+        border-top: 1px solid $accentColor;
+        width: 100px;
+        margin: 0 auto;
+     
+    }
+        img{
+            position: relative;
+            top: -15px;
+            background: white;
+            padding: 0 10px;
+
+        }
 }
 // --- END Courses Title ---
 
@@ -33,7 +40,7 @@
     font-weight: $light;
     justify-content: center;
     color: inherit;
-    margin-bottom: 50px;
+    margin: 0 0 50px 0;
         li{
                 a{
                     text-decoration: none;
@@ -60,43 +67,76 @@
 
 // --- START Courses Main ---
 .course-container{
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     .course{
-        width: calc(25% - 20px);
-        float: left;
-        border: 1px solid grey;
-        margin-right: 10px;
+        width: calc(25% - (60px / 4));
+        border: 1px solid #e1e1e1;
+        margin-bottom: 20px;
+        min-width: 258px;
         
-        .course-text-block{
-            padding: 10px;
-        
-            img{
-                width: 100%;
-                display: block;
-            }
-            .course-title{
-                font-size: 1.8rem;
-                font-weight: $bold;
-            }
-            .profile-photo{
-                width: 45px;
-                height: 45px;
-                border-radius: 50%;
-                background-color: grey;
-            }
-            .name{
-                // float: left;
-                font-size: 1.4rem;
-            }
-            .profile-link{
-                // float: left;
-                color: $accentColor;
-                text-transform: uppercase;
-                font-size: 1.2rem;
-            }
+        img{
+            width: 100%;
+            display: block;
         }
     }
 }
 
+.course-text-block{
+        padding: 10px;
+        
+        .course-title{
+            font-size: 1.8rem;
+            font-weight: $bold;
+            margin: 0;
+            min-height: 45px;
+        }
+        .profile-photo{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: grey;
+            margin: 20px 20px 0 0 ;
+            float: left;
+        }
+}
 // --- END Courses Main ---
 // === COURSES ENDS ===
+
+.name-block{
+    float: left;
+    .name{
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .profile-link{
+        color: $accentColor;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+}
+
+.course-footer{
+    border-top: 1px solid #e1e1e1;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    width: 100%;
+ 
+    div{
+        width: 80%;
+        p{
+            float: left;
+            margin-right: 10px;
+            color: #666666;
+        }
+    }
+    .free{
+        color: $accentColor;
+    }
+}

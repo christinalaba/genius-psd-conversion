@@ -2,9 +2,9 @@
 $accentColor:#86bc42;
 
 // gallery / pricing background: #f0f2f7
-$bkgrey: #f0f2f7;
+$bkGrey: #f0f2f7;
 // news backgrounds /differents section: #f4f6fa
-$bkblue:#f4f6fa ;
+$bkBlue:#f4f6fa ;
 
 $facebook:#3b5999;
 $twitter:#00abf1;
@@ -37,6 +37,21 @@ $bold: 700;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2rem;
+    transition: all 1s;
+    &:hover{
+        border: 2px solid white;
+        background-color: #242c42;;
+    }
+    &:focus{
+        border: 2px solid white;
+        background-color: #242c42;;
+    }
+    &:active{
+       position: relative;
+        bottom: -2px;
+        right: -2px;
+    }
+
 }
 
 

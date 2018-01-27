@@ -244,7 +244,7 @@ header {
   .header-text-block h1 {
     color: #242c42;
     font-size: 7.2rem;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
     text-transform: uppercase; }
   .header-text-block p {
@@ -264,7 +264,20 @@ header {
       padding: 20px;
       text-transform: uppercase;
       text-decoration: none;
-      letter-spacing: 0.2rem; }
+      letter-spacing: 0.2rem;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s; }
+      .header-text-block .button-primary a:hover {
+        border: 2px solid white;
+        background-color: #242c42; }
+      .header-text-block .button-primary a:focus {
+        border: 2px solid white;
+        background-color: #242c42; }
+      .header-text-block .button-primary a:active {
+        position: relative;
+        bottom: -2px;
+        right: -2px; }
 
 .section-title {
   text-align: center;
@@ -277,6 +290,15 @@ header {
   .section-title h2 {
     font-size: 3.6rem;
     margin: 10px 0 25px 0; }
+  .section-title .book-line {
+    border-top: 1px solid #86bc42;
+    width: 100px;
+    margin: 0 auto; }
+  .section-title img {
+    position: relative;
+    top: -15px;
+    background: white;
+    padding: 0 10px; }
 
 .courses-nav {
   display: -webkit-box;
@@ -293,7 +315,7 @@ header {
   -ms-flex-pack: center;
   justify-content: center;
   color: inherit;
-  margin-bottom: 50px; }
+  margin: 0 0 50px 0; }
   .courses-nav li a {
     text-decoration: none; }
     .courses-nav li a:not(last-of-type) {
@@ -307,30 +329,70 @@ header {
       bottom: -2px;
       right: -2px; }
 
-.course-container .course {
-  width: calc(25% - 20px);
-  float: left;
-  border: 1px solid grey;
-  margin-right: 10px; }
-  .course-container .course .course-text-block {
-    padding: 10px; }
-    .course-container .course .course-text-block img {
+.course-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .course-container .course {
+    width: calc(25% - (60px / 4));
+    border: 1px solid #e1e1e1;
+    margin-bottom: 20px;
+    min-width: 258px; }
+    .course-container .course img {
       width: 100%;
       display: block; }
-    .course-container .course .course-text-block .course-title {
-      font-size: 1.8rem;
-      font-weight: 700; }
-    .course-container .course .course-text-block .profile-photo {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background-color: grey; }
-    .course-container .course .course-text-block .name {
-      font-size: 1.4rem; }
-    .course-container .course .course-text-block .profile-link {
-      color: #86bc42;
-      text-transform: uppercase;
-      font-size: 1.2rem; }
+
+.course-text-block {
+  padding: 10px; }
+  .course-text-block .course-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    min-height: 45px; }
+  .course-text-block .profile-photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 20px 20px 0 0;
+    float: left; }
+
+.name-block {
+  float: left; }
+  .name-block .name {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    margin-top: 20px; }
+  .name-block .profile-link {
+    color: #86bc42;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 5px; }
+
+.course-footer {
+  border-top: 1px solid #e1e1e1;
+  padding: 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  width: 100%; }
+  .course-footer div {
+    width: 80%; }
+    .course-footer div p {
+      float: left;
+      margin-right: 10px;
+      color: #666666; }
+  .course-footer .free {
+    color: #86bc42; }
 
 html {
   font-size: 62.5%;

@@ -2,8 +2,10 @@
 @import "components/theme";
 @import "components/home";
 @import "components/courses";
-
-
+@import "components/gallery";
+@import "components/news";
+@import "components/client";
+@import "components/pricing";
 html{
     font-size: 62.5%;
     font-family: "raleway", sans-serif;
@@ -17,29 +19,9 @@ html{
 }
 
 
-// === GALLERY STARTS ===
-// --- START gallery Title ---
-// --- END gallery Title ---
-// --- START gallery images ---
-// --- END gallery images ---
-// === GALLERY ENDS ===
 
-// === NEWS STARTS ===
-// --- START News Title ---
-// --- END News Title ---
-// --- START news Main ---
-// Section Digital
-// Section marketing
-// ection education
-// --- END news Main ---
-// === NEWS ENDS ===
 
-// === CLIENT STARTS ===
-// --- START Client Title ---
-// --- END Client Title ---
-// --- START Client main ---
-// --- END Client main ---
-// === CLIENT ENDS ===
+
 
 // === PRICING STARTS ===
 // --- START Pricing Title ---
