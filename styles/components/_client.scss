@@ -1,6 +1,45 @@
 // === CLIENT STARTS ===
-// --- START Client Title ---
-// --- END Client Title ---
-// --- START Client main ---
-// --- END Client main ---
+
+#client{
+    background-color: $bkBlue;
+    padding: 1px 0 40px 0;
+}
+
+
+.client-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 100px;
+    
+
+        .client-container{
+        width: calc(33.33% - (40px / 3));
+        padding-right: 50px;
+        }
+
+        .client-experience{
+            margin: 0 20px;
+        }
+}
+
+.client-container{
+        img{
+           float: left;
+           padding: 0 30px 0  0 ;
+    
+        }
+        .client-text-block{
+            float: left;
+            width: 100%;
+        }
+        p{
+        line-height: 1.5rem;
+        letter-spacing: 0.02rem;
+        font-weight: $light;
+        padding-left: 60px;
+        }
+}
+
 // === CLIENT ENDS ===

@@ -1,11 +1,6 @@
 @import "components/normalize";
 @import "components/theme";
-@import "components/home";
-@import "components/courses";
-@import "components/gallery";
-@import "components/news";
-@import "components/client";
-@import "components/pricing";
+
 html{
     font-size: 62.5%;
     font-family: "raleway", sans-serif;
@@ -18,14 +13,17 @@ html{
     margin: 0 auto;
 }
 
+@import "components/home";
+@import "components/courses";
+@import "components/gallery";
+@import "components/news";
+@import "components/client";
+@import "components/pricing";
 
 
 
 
 
-// === PRICING STARTS ===
-// --- START Pricing Title ---
-// --- END Pricing Title ---
-// --- START Pricing main ---
-// --- END Pricing main ---
-// === PRICING ENDS ===
+
+
+

@@ -1,9 +1,74 @@
 // === NEWS STARTS ===
-// --- START News Title ---
-// --- END News Title ---
-// --- START news Main ---
 // Section Digital
-// Section marketing
-// ection education
-// --- END news Main ---
+.news-container{
+    width: 100%;
+    background-color: $bkBlue;
+    margin-bottom: 80px;
+        img{
+            display: block;
+            width: calc(50% - 50px);
+            margin-right: 50px;
+            float: left;
+            position: relative;
+            top: -30px;
+            right: -35px;
+        }
+        .news-text{
+            width: 50%;
+            height: 453px;
+            padding: 42px 20px;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            justify-content: space-between;
+        }
+}
+
+h4{
+        text-transform: capitalize;
+        font-size: 2.4rem;
+        font-weight: $bold;
+        margin:10px 0 20px 0;
+}
+
+.news-content{
+        .news-date{
+            font-size: 1.2rem;
+            font-weight: $light;
+            
+                p{
+                    margin: 0 0 5px 0;
+                    float: left;
+                }
+                p + p{
+                    border-left: 1px solid black;
+                    padding-left: 15px;
+                    margin-left: 15px;
+                }
+        }
+}
+
+.news-social{
+    display: flex;
+    font-weight: $light;
+        p{
+             padding-left: 30px;
+             margin: 0 0 20px 0;
+        }
+}
+
+.news-description{
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+
+}
+
+.learn-button a{
+    @include primaryButton(150px);
+
+}
+
+
+
 // === NEWS ENDS ===
