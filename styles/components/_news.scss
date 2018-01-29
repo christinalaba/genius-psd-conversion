@@ -53,7 +53,6 @@ h4{
     display: flex;
     font-weight: $light;
         p{
-             padding-left: 30px;
              margin: 0 0 20px 0;
         }
 }
@@ -72,3 +71,17 @@ h4{
 
 
 // === NEWS ENDS ===
+
+.news-user::before{
+    content: "\f007";
+    font-family: "FontAwesome";
+    padding-right: 5px;
+
+}
+
+.news-social p + p::before{
+    content: "\f086";
+    font-family: "FontAwesome"; 
+    padding-right: 5px;
+    margin-left: 10px;
+}

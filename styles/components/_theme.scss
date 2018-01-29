@@ -3,7 +3,7 @@ $accentColor:#86bc42;
 
 // gallery / pricing background: #f0f2f7
 $bkGrey: #f0f2f7;
-// news backgrounds /differents section: #f4f6fa
+// news /CLIENT section: #f4f6fa
 $bkBlue:#f4f6fa ;
 
 $facebook:#3b5999;
@@ -25,6 +25,8 @@ $bold: 700;
 @mixin headerSecondry{
     font-size: 1.802rem;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 @mixin primaryButton ($buttonWidth){
@@ -60,14 +62,3 @@ $bold: 700;
 //Save the file.
 //Delete the css file.
 //Import the file in main.
-
-
-// header: #252525;
-// main footer:#252525;
-
-// diff circles: #fafbfd
-
-// profile circle: #b7b7b7
-
-// PLUS ICON + :#363636
-

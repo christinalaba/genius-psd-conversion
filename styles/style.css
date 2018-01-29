@@ -132,6 +132,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
+
 html {
   font-size: 62.5%;
   font-family: "raleway", sans-serif;
@@ -299,10 +312,13 @@ header {
   text-transform: uppercase; }
   .section-title h3 {
     font-size: 1.802rem;
+    text-align: center;
     margin: 0;
     padding: 0; }
   .section-title h2 {
     font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
     margin: 10px 0 25px 0; }
   .section-title .book-line {
     border-top: 1px solid #86bc42;
@@ -330,18 +346,22 @@ header {
   justify-content: center;
   color: inherit;
   margin: 0 0 50px 0; }
-  .courses-nav li a {
-    text-decoration: none; }
-    .courses-nav li a:not(last-of-type) {
-      margin-right: 50px; }
-    .courses-nav li a:hover {
-      color: #86bc42; }
-    .courses-nav li a:focus {
-      color: #86bc42; }
-    .courses-nav li a:active {
-      position: relative;
-      bottom: -2px;
-      right: -2px; }
+  .courses-nav li {
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    .courses-nav li a {
+      text-decoration: none; }
+      .courses-nav li a:not(last-of-type) {
+        margin-right: 50px; }
+      .courses-nav li a:hover {
+        color: #86bc42; }
+      .courses-nav li a:focus {
+        color: #86bc42; }
+      .courses-nav li a:active {
+        position: relative;
+        bottom: -2px;
+        right: -2px; }
 
 .course-container {
   display: -webkit-box;
@@ -423,6 +443,9 @@ header {
 #gallery {
   background-color: #f0f2f7;
   padding: 1px 0 40px 0; }
+
+.gallery-book-line img {
+  background-color: #f0f2f7; }
 
 .gallery-container {
   list-style-type: none;
@@ -525,7 +548,6 @@ h4 {
   display: flex;
   font-weight: 300; }
   .news-social p {
-    padding-left: 30px;
     margin: 0 0 20px 0; }
 
 .news-description {
@@ -556,9 +578,23 @@ h4 {
     bottom: -2px;
     right: -2px; }
 
+.news-user::before {
+  content: "\f007";
+  font-family: "FontAwesome";
+  padding-right: 5px; }
+
+.news-social p + p::before {
+  content: "\f086";
+  font-family: "FontAwesome";
+  padding-right: 5px;
+  margin-left: 10px; }
+
 #client {
   background-color: #f4f6fa;
   padding: 1px 0 40px 0; }
+
+.client-book-line img {
+  background-color: #f4f6fa; }
 
 .client-main {
   display: -webkit-box;
@@ -688,16 +724,174 @@ h4 {
     color: white; }
 
 .pricing-medium .pricing-title {
-  background-color: #86bc42; }
+  background-color: #86bc42;
+  color: white; }
 
 .pricing-medium .price-outline {
   border-right: 10px solid #86bc42;
   border-left: 10px solid #86bc42; }
 
 .pricing-medium .price-button {
-  background-color: #86bc42; }
+  background-color: #86bc42;
+  color: white; }
 
 #footer {
   background-color: #252525;
   color: white;
-  padding: 50px 0; }
+  padding: 50px 0;
+  font-weight: 300;
+  letter-spacing: 0.1rem; }
+
+.footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.footer-block {
+  width: calc(33.33% - (80px / 3)); }
+
+.footer-courses-contact {
+  margin: 0 30px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.footer-mission {
+  padding-right: 50px;
+  line-height: 2.5rem; }
+  .footer-mission p span {
+    color: #86bc42; }
+  .footer-mission ul {
+    list-style-type: none;
+    padding: 0; }
+    .footer-mission ul li:before {
+      content: "\f00c";
+      font-family: FontAwesome;
+      display: inline-block;
+      color: #86bc42;
+      margin-right: 10px; }
+
+.footer-course-list {
+  list-style-type: none;
+  padding: 0;
+  line-height: 2.5rem; }
+  .footer-course-list li a {
+    text-decoration: none;
+    color: white; }
+
+.footer-course-list li:hover :before {
+  content: "\f054";
+  font-family: FontAwesome;
+  display: inline-block;
+  color: #86bc42;
+  margin-right: 10px; }
+
+.footer-contact svg {
+  color: #86bc42;
+  margin-right: 10px;
+  float: left; }
+
+.footer-contact .address {
+  float: left;
+  margin: 0 0 10px 0;
+  line-height: 2rem; }
+
+.footer-contact .phone-number:before {
+  content: "\f098";
+  font-family: FontAwesome;
+  color: #86bc42;
+  margin-right: 10px; }
+
+.footer-contact .email:before {
+  content: "\f0e0";
+  font-family: FontAwesome;
+  color: #86bc42;
+  margin-right: 10px; }
+
+.subscribe-form {
+  margin: 20px 0; }
+  .subscribe-form .emailSubscribe {
+    border-radius: 5px;
+    min-width: 235px;
+    padding: 10px; }
+  .subscribe-form button {
+    background-color: #86bc42;
+    color: white;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-width: 50px;
+    padding: 10px;
+    border-radius: 5px; }
+
+.footer-newsletter .subscribe-form + p {
+  margin: 20px 0; }
+
+.footer_social .fa-facebook-square {
+  color: #3b5999;
+  font-size: 20px;
+  margin-right: 20px; }
+
+.footer_social .fa-twitter-square {
+  color: #00abf1;
+  font-size: 20px;
+  margin-right: 20px; }
+
+.footer_social .fa-google-plus-square {
+  color: #e12f2f;
+  font-size: 20px;
+  margin-right: 20px; }
+
+.footer_social .fa-instagram {
+  color: #865045;
+  font-size: 20px; }
+
+.copyright-bar {
+  background-color: black;
+  color: white;
+  font-size: 1.0rem;
+  font-weight: 100; }
+  .copyright-bar .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 0; }
+    .copyright-bar .wrapper span {
+      color: #86bc42; }
+
+.footer-nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .footer-nav li {
+    margin-right: 30px; }
+    .footer-nav li a {
+      text-decoration: none;
+      color: white; }
+
+.footer-nav li a:hover {
+  color: #86bc42;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.footer-nav li a:focus {
+  color: #86bc42;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }

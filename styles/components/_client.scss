@@ -5,6 +5,9 @@
     padding: 1px 0 40px 0;
 }
 
+.client-book-line img{
+    background-color: $bkBlue;
+}
 
 .client-main{
     display: flex;
@@ -62,5 +65,6 @@
     top: -45px;
     left: -30px;
 }
+
 
 // === CLIENT ENDS ===

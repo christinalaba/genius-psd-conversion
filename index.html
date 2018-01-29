@@ -10,6 +10,7 @@
     <link rel='stylesheet' type='text/css' href='styles/style.css'>
     <script defer src='https://use.fontawesome.com/releases/v5.0.4/js/all.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     
 <body>
@@ -264,7 +265,7 @@
         <div class="section-title">
             <h3>Lorem ipsum dolor</h3>
             <h2>see photo gallery</h2>
-            <div class="book-line">
+            <div class="book-line gallery-book-line">
                 <img src="./assets/open-magazine.png" alt="icon showing an open book">
             </div>
         </div><!-- /. section-title -->
@@ -416,7 +417,7 @@
         <div class="section-title">
             <h3>Lorem ipsum dolor</h3>
             <h2>what makes us different?</h2>
-            <div class="book-line">
+            <div class="book-line client-book-line">
                 <img src="./assets/open-magazine.png" alt="icon showing an open book">
             </div>
         </div><!-- /. section-title -->
@@ -557,74 +558,79 @@
     <div class="wrapper">
 
 <!-- - START main footer content - -->
-        <div class="footer-mission">
-            <p><span>Genius</span> provides broad range of learning programs and activities that's unique in itself</p>
-            <ul class="programs">
-                <li>Mountain Trekking Programs</li>
-                <li>Inter School Competitions</li>
-                <li>Awards and Ceremony</li>
-            </ul>
-        </div><!-- footer-mission -->
+        <div class="footer-main clearfix">
+            <div class="footer-block footer-mission">
+                <img src="./assets/logo.png" alt="company logo">
+                <p><span>Genius</span> provides broad range of learning programs and activities that's unique in itself</p>
+                <ul class="programs">
+                    <li>Mountain Trekking Programs</li>
+                    <li>Inter School Competitions</li>
+                    <li>Awards and Ceremony</li>
+                </ul>
+            </div><!-- /. footer-mission -->
 
-        <div class="footer-courses">
-            <ul class="footer-course-list">
-                <li><a href=""><i class="fas fa-angle-right"></i>Courses</a></li>
-                <li><a href="">Events</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
+            <div class="footer-block footer-courses-contact">
+                <div class="footer-courses">
+                    <h4>Courses</h4>
+                    <ul class="footer-course-list">
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div><!-- /. footer-courses -->
 
-        <div class="footer-contact">
-            <div class="address">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Hawkins DDR 873<br>Drake APA 159<br/>Yosemite AD 19</p>
+                <div class="footer-contact clearfix">
+                    <h4>Contact Us</h4>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="address">Hawkins DDR 873<br>Drake APA 159<br/>Yosemite AD 19</p>
+                    <p class="phone-number">817 929 3756</p>
+                    <p class="email">contact@com.vn</p>
+                </div><!-- /.footer-contact -->
             </div>
-            <div class="phone-number">
-                <i class="fas fa-phone-square"></i>
-                <p>817 929 3756</p>
-            </div>
-            <div class="email">
-                <i class="fas fa-envelope"></i>
-                <p>contact@com.vn</p>
-            </div>
-        </div>
 
-        <div class="footer-newsletter">
-            <p>Sign up for new Envato content, updates, surveys &amp; offers.</p>
-            <div class="subscribe-form">
-                <form action="" method="POST" autocomplete="off" name="subscribeForm" class="clearfix">
-                    <label class="visuallyhidden" for="emailSubscribe">Enter your email</label>
-                    <input type="email" id="emailSubscribe" placeholder="Email address" class="emailSubscribe" name="emailSubscribe">
-                    <button class="subscribeButton">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div><!-- /. subscribe-form -->
-            <p>We respect your privacy</p>
-            <div class="footer_social">
-                <a><i class="fab fa-facebook-square"></i></a>
-                <a><i class="fab fa-twitter-square"></i></a>
-                <a><i class="fab fa-google-plus-square"></i></a>
-                <a><i class="fab fa-instagram"></i></a>
-            </div> <!-- /.about_text_social -->
-        </div>
-<!-- - END main footer content - -->
+            <div class="footer-block footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Sign up for new Envato content, updates, surveys &amp; offers.</p>
+                <div class="subscribe-form">
+                    <form action="" method="POST" autocomplete="off" name="subscribeForm" class="clearfix">
+                        <label class="visuallyhidden" for="emailSubscribe">Enter your email</label>
+                        <input type="email" id="emailSubscribe" placeholder="Email address" class="emailSubscribe" name="emailSubscribe">
+                        <button class="subscribeButton">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div><!-- /. subscribe-form -->
+                <p>We respect your privacy</p>
+                <div class="footer_social">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/christina_laba"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://plus.google.com/discover"><i class="fab fa-google-plus-square"></i></a>
+                    <a  href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                </div> <!-- /.about_text_social -->
+            </div><!-- /.footer-newsletter -->
+        
+        </div> <!-- - END main footer content - -->
+    </div><!-- /. wrapper -->
+</div><!-- /.#footer -->
 
 <!-- - START copywright bar - -->
-        <ul class="copyright-bar">
+ <div class="copyright-bar">
+    <div class="wrapper">
+        <ul class="footer-nav">
             <li><a href="#home">Home</a></li>
             <li><a href="">Pages</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="">Events</a></li>
         </ul>
-        <p>Copyright &copy; 2017</p>
+        <p>Copyright <span>&copy;</span> 2017</p>
+    </div>
+</div>
+
 <!-- - END copywright bar - -->
-   </div><!-- /. wrapper -->
-</div><!-- /.#footer -->
 <!-- === FOOTER ENDS === -->
 
 </body>

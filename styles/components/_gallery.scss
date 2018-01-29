@@ -5,6 +5,10 @@
     padding: 1px 0 40px 0;
 }
 
+.gallery-book-line img{
+    background-color: $bkGrey;
+}
+
 .gallery-container{
     list-style-type: none;
     display: flex;

@@ -9,12 +9,11 @@
     margin: 100px 0 50px 0;
     text-transform: uppercase;
     h3{
-        font-size: 1.802rem;
-        margin: 0;
-        padding: 0;
+        @include headerSecondry;
     }
+
     h2{
-        font-size: 3.6rem;
+        @include headerPrimary;
         margin:10px 0 25px 0;
     }
   
@@ -22,7 +21,6 @@
         border-top: 1px solid $accentColor;
         width: 100px;
         margin: 0 auto;
-     
     }
         img{
             position: relative;
@@ -46,6 +44,7 @@
     color: inherit;
     margin: 0 0 50px 0;
         li{
+            transition: all 0.2s;
                 a{
                     text-decoration: none;
                     &:not(last-of-type){
@@ -147,7 +146,7 @@
 }
 
 .crowd::before{
-    content:"\f0c0";
+    content: "\f0c0";
     font-family: "FontAwesome";
     color: #b7b7b7;  
     padding-right: 10px;
