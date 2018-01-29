@@ -25,21 +25,42 @@
 }
 
 .client-container{
+    position: relative;
+    z-index: 10;
         img{
-           float: left;
-           padding: 0 30px 0  0 ;
-    
-        }
-        .client-text-block{
             float: left;
-            width: 100%;
+            padding: 0 30px 0  0 ;
+            position: relative;
+            z-index: 30;
+            
         }
-        p{
-        line-height: 1.5rem;
-        letter-spacing: 0.02rem;
-        font-weight: $light;
-        padding-left: 60px;
+
+        h4{
+            position: relative;
+            z-index: 40;
         }
+}
+
+.client-container p{
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+    font-weight: $light;
+    padding-left: 60px;
+    position: relative;
+    z-index: 20;
+}
+
+
+.circle{
+    content:'';
+    width: 200px;
+    height: 200px;
+    background-color: #fafbfd;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    top: -45px;
+    left: -30px;
 }
 
 // === CLIENT ENDS ===

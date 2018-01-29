@@ -101,7 +101,7 @@
 
 // === HOME PAGE STARTS ===
 header {
-    background-image: url("/assets/hero-image.jpg");
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/assets/hero-image.jpg');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
