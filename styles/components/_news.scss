@@ -4,6 +4,7 @@
     width: 100%;
     background-color: $bkBlue;
     margin-bottom: 80px;
+
         img{
             display: block;
             width: calc(50% - 50px);
@@ -23,6 +24,12 @@
             align-content: space-between;
             justify-content: space-between;
         }
+}
+
+.news-container:hover{
+    -webkit-box-shadow: 6px 9px 9px -1px rgba(184,178,184,0.78);
+    -moz-box-shadow: 6px 9px 9px -1px rgba(184,178,184,0.78);
+    box-shadow: 6px 9px 9px -1px rgba(184,178,184,0.78);    
 }
 
 h4{
@@ -68,8 +75,6 @@ h4{
 
 }
 
-
-
 // === NEWS ENDS ===
 
 .news-user::before{
@@ -85,3 +90,28 @@ h4{
     padding-right: 5px;
     margin-left: 10px;
 }
+
+@media (max-width:1024px){
+    .news-container .news-text{
+        height: 375px;
+    }
+}
+
+@media (max-width:770px){
+    .news-container .news-text{
+        height: 400px;
+    }
+}
+
+@media (max-width:600px){
+    .news-container .news-text {
+        width: 100%;
+        height: 360px;
+        padding: 0px 20px 42px 20px;
+    }
+
+    .news-container img{
+        width: 80%;
+    }
+}
+

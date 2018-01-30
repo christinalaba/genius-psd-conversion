@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .contact-text{
@@ -24,6 +25,7 @@
             padding-right: 40px;
         }
 }
+
 
 .contact-text{
         svg{
@@ -38,18 +40,29 @@
         }
 }
 
+
+.login p{
+    margin: 0;
+    transition: all 0.2s;
+    cursor: pointer;
+        &:hover{
+        color: $accentColor;
+        } 
+}
+
+
+.login a + a{
+    border-left: 1px solid white;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
 .login{
     display: flex;
     flex-direction: row;
     justify-content: flex-end; 
     align-items: center;
-}
-
-
-.login p + p{
-    border-left: 1px solid white;
-    padding-left: 15px;
-    margin-left: 15px;
+    min-height: 40px;
 }
 
 // --- END Contact bar ---
@@ -67,6 +80,7 @@
 }
 
 .main-nav {
+    padding: 0;
     li{
         transition: all 0.2s;
         
@@ -82,9 +96,11 @@
 
         &:hover{
             color: $accentColor;
+            cursor: pointer;
         }
         &:focus{
             color: $accentColor;
+             cursor: pointer;
         }
         &:active{
             position: relative;
@@ -110,13 +126,14 @@ header {
 
 .header-text-block{
     width: 100%;
-    padding: 90px 0;
+    padding: 90px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
         h1{
             color: #242c42;
             font-size: 7.2rem;
+            // font-size: 10vh;
             font-weight: 900;
             text-align: center;
             text-transform: uppercase;
@@ -138,5 +155,58 @@ header {
         }
 }
 
+@media (max-width:922px){
+    .contact-text{
+            p{
+                padding-right: 8px;
+            }
+    }
+    header{
+        height: 90vh;
+    }
 
-// === END HOME PAGE ===
+     .main-nav li a{
+        padding-right: 35px;
+    }
+}
+
+@media (max-width:760px){
+    .contact-text, .logo, .login{
+        width: 100%;
+        float: none;
+    }
+
+    .login,  .contact-text{
+        justify-content: right;
+        min-height: 20px;
+    }
+
+    .contact-bar .logo {
+        text-align: left;
+    }
+
+    .main-nav li a{
+        padding-right: 30px;
+    }
+    
+    .contact-bar .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-text{
+        order: 3;
+    }
+
+}
+
+@media (max-width:415px){
+    .header-text-block h1{
+        font-size: 5.2rem;
+        // font-size: 8vh;
+    }
+
+    .header-text-block{
+        padding: 50px 0;   
+    }
+}

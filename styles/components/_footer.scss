@@ -7,14 +7,9 @@
     letter-spacing: 0.1rem;
 } 
 
-
-.footer-main{
-    display: flex;
-    flex-direction: row;
-}
-
 .footer-block{
     width: calc(33.33% - (80px / 3));
+    float: left;
 }
 
 .footer-courses-contact{
@@ -57,11 +52,8 @@
                     text-decoration: none;
                     color: white;
                 }
-
         }
-        
 }
-
 
 .footer-course-list li:hover :before{
     content: "\f054";
@@ -203,3 +195,40 @@
 }
 
 // CREDITS BAR ENDS
+
+@media (max-width:890px){
+    .footer-block {
+    width: 50%;
+    padding-bottom: 10px;
+    }
+
+    .footer-courses-contact {
+    margin: 0;
+    justify-content: space-between;
+    }
+}
+
+@media (max-width:550px){
+    .footer-block {
+        width: 100%;
+        float:none;
+    }
+
+    .footer-courses-contact{
+        justify-content: space-around;
+    }
+
+    .footer-mission, .footer-newsletter{
+        text-align: center;
+    }
+
+    .footer-mission {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .footer-nav li {
+    margin-right: 15px;
+    }
+}
+
