@@ -114,16 +114,18 @@
 	left: 0;
     right: 0;
 	background: white;
-	color: $accentColor;
+    color: $accentColor;
+    transition: all 0.3s;
 }
 
 .burgerOverlay ul {
     display: flex;
     flex-direction: column;
-    margin: 0 50px;
+    margin: 0 80px;
     color: black;
     li{
-        margin: 10px 0;
+        margin: 15px 0;
+        font-size: 2rem;
     }
 
 }
@@ -140,7 +142,7 @@
 
 // === HOME PAGE STARTS ===
 header {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/assets/hero-image.jpg');
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../assets/hero-image.jpg');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;

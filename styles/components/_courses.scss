@@ -45,9 +45,10 @@
     margin: 0 0 50px 0;
         li{
             transition: all 0.2s;
-                
-                a{
-                    text-decoration: none;
+            
+            a{
+                text-decoration: none;
+                color: black;
                     &:not(last-of-type){
                         margin-right: 50px;
                     }

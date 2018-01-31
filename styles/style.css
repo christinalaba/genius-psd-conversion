@@ -268,7 +268,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   left: 0;
   right: 0;
   background: white;
-  color: #86bc42; }
+  color: #86bc42;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .burgerOverlay ul {
   display: -webkit-box;
@@ -278,20 +281,21 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0 50px;
+  margin: 0 80px;
   color: black; }
   .burgerOverlay ul li {
-    margin: 10px 0; }
+    margin: 15px 0;
+    font-size: 2rem; }
 
 .burgerOverlay .burger-bar {
   margin: 25px 20px;
   color: #86bc42; }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("/assets/hero-image.jpg");
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/assets/hero-image.jpg");
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/assets/hero-image.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/assets/hero-image.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../assets/hero-image.jpg");
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/hero-image.jpg");
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/hero-image.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/hero-image.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -450,7 +454,8 @@ header {
     -o-transition: all 0.2s;
     transition: all 0.2s; }
     .courses-nav li a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: black; }
       .courses-nav li a:not(last-of-type) {
         margin-right: 50px; }
       .courses-nav li a:hover {
