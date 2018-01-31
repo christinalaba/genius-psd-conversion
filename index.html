@@ -636,6 +636,7 @@
 <!-- === FOOTER ENDS === -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 
 <script>
 $(document).ready(function () {
@@ -647,9 +648,17 @@ $(document).ready(function () {
             $('.main-nav').toggleClass('menu-show');
             
         })
-
     });
 
+</script>
+
+<script>
+    $(function () {
+
+        $('a').smoothScroll({
+            offset: 100
+        });
+    });	
 </script>
 
 </body>
