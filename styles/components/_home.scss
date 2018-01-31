@@ -6,49 +6,48 @@
     font-weight: $light;  
     padding: 20px 0;
     font-size: 1.2rem;
+    .logo{
+        text-align: center;
+        }
 }
+
 
 .contact-text, .logo, .login{
     width: 33.33%;
     float: left;
-}
+}    
 
 .contact-text{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-}
-
-.contact-text{
-        p{
-            padding-right: 40px;
-        }
-}
-
-
-.contact-text{
-        svg{
-            color: $accentColor;
-            margin-right: 10px;
-        }
-}
-
-.contact-bar{
-        .logo{
-            text-align: center;
-        }
-}
-
-
-.login p{
-    margin: 0;
-    transition: all 0.2s;
-    cursor: pointer;
-        &:hover{
+    p{
+        padding-right: 40px;
+    }    
+    svg{
         color: $accentColor;
+        margin-right: 10px;
+    }    
+}    
+
+
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    align-items: center;
+    min-height: 40px;
+    p{
+        margin: 0;
+        transition: all 0.2s;
+        cursor: pointer;
+            
+        &:hover{
+            color: $accentColor;
         } 
+    }
 }
+
 
 
 .login a + a{
@@ -57,30 +56,27 @@
     margin-left: 15px;
 }
 
-.login{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; 
-    align-items: center;
-    min-height: 40px;
-}
-
 // --- END Contact bar ---
 
 
 // --- START nav bar ---
-.main-nav{
+
+.burger-bar{
+    display: none;
+    transition: all 0.5s;
+}
+
+.main-nav {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     font-size: 1.4rem;
     font-weight: $bold;
     justify-content: center;
-    
-}
-
-.main-nav {
+    align-content: center;
     padding: 0;
+    text-transform: uppercase;
+
     li{
         transition: all 0.2s;
         
@@ -111,6 +107,33 @@
     }
 }
 
+// overlay that opens up when burger bar is clicked
+.burgerOverlay{
+	display: block;
+	position: absolute;
+	left: 0;
+    right: 0;
+	background: white;
+	color: $accentColor;
+}
+
+.burgerOverlay ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    color: black;
+    li{
+        margin: 10px 0;
+    }
+
+}
+
+// this positions the hamburger icon
+.burgerOverlay .burger-bar {
+    margin: 25px 20px;
+    color: $accentColor;
+}
+
 // --- END nav bar ---
 // === HEADER ENDS ===
 
@@ -133,7 +156,6 @@ header {
         h1{
             color: #242c42;
             font-size: 7.2rem;
-            // font-size: 10vh;
             font-weight: 900;
             text-align: center;
             text-transform: uppercase;
@@ -141,7 +163,9 @@ header {
         p{
             text-align: center;
             font-size: 1.8rem;
-            background: radial-gradient(#d9dce7cc 30%, transparent 60%);    
+            background: radial-gradient(#d9dce7cc 30%, transparent 60%);
+            max-width: 850px;
+            line-height: 3rem;
         }
         .button-primary{
             margin-top: 50px;
@@ -149,20 +173,18 @@ header {
                 a{
                     @include primaryButton(300px);
                 }
-                // &:hover{
-                //      background-color:#e4dfcb !important;
-                // }
+                
         }
 }
+
+
+// media quieries
 
 @media (max-width:922px){
     .contact-text{
             p{
                 padding-right: 8px;
             }
-    }
-    header{
-        height: 90vh;
     }
 
      .main-nav li a{
@@ -200,13 +222,34 @@ header {
 
 }
 
-@media (max-width:415px){
+// burger bar for mobile
+@media(max-width: 660px){
+    .main-nav{
+        display: none;
+        // visibility: hidden;
+    }
+    
+    .burger-bar{
+        display: block;
+        font-size: 25px;
+    }
+    
+    .main-nav .menu-show {
+        display: flex;
+    }
+    
+    .main-nav .fa-shopping-cart, .main-nav .fa-search{
+        display: none;
+    }
+}
+
+@media (max-width:500px){
     .header-text-block h1{
         font-size: 5.2rem;
-        // font-size: 8vh;
     }
 
     .header-text-block{
         padding: 50px 0;   
     }
 }
+

@@ -82,12 +82,21 @@
     text-transform: uppercase;
 }
 
+.pricing-low,
+.pricing-medium,
+.pricing-high{
+    transition: all 0.5s;
+}
+
 .pricing-low:hover,
 .pricing-medium:hover,
 .pricing-high:hover,
 .pricing-low:focus,
 .pricing-medium:focus,
-.pricing-high:focus{
+.pricing-high:focus,
+.pricing-low:active,
+.pricing-medium:active,
+.pricing-high:active{
     cursor: pointer;
     transform: scale(1.05);
     
@@ -104,7 +113,7 @@
         .pricing-title{
             background-color: $accentColor;
             color: white;
-            
+            // transition: all 0.5s;
         }
 
         .price-outline{
@@ -119,11 +128,17 @@
 
 }
 
+@media (max-width:850px){
+    .pricing-block{
+         width: 60%;
+         margin: 0 auto;
+         float:none;
+    }
+}
+
 @media (max-width:770px){
     .pricing-block{
          width: 65%;
-         margin: 0 auto;
-         float:none;
     }
 
     #pricing .section-title{
@@ -132,9 +147,9 @@
 
 }
 
-@media (max-width:500px){
+@media (max-width:550px){
     .pricing-block{
-         width: 90%;
+         width: 85%;
     }
 }
 

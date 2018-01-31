@@ -10,6 +10,10 @@ html{
     margin: 0 auto;
 }
 
+body{
+    font-family: raleway;
+}
+
 @import "components/_normalize.scss";
 @import "components/_theme.scss";
 @import "components/_home.scss";
@@ -19,6 +23,9 @@ html{
 @import "components/_client.scss";
 @import "components/_pricing.scss";
 @import "components/_footer.scss";
+
+// <div> hamburger menu Icons made by href="https://www.flaticon.com/authors/chris-veigt" title="Chris Veigt">Chris Veigt</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</div>
+
 
 
 

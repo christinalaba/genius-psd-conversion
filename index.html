@@ -38,7 +38,8 @@
 
 <!-- - START nav bar - -->
 <div class="wrapper">
-    <nav>
+    <nav class="main-menu">
+        <p class="burger-bar"><i class="fa fa-bars" aria-hidden="true"></i></p>
         <ul class="main-nav">
             <li><a href="#home">Home</a></li>
             <li><a href="">Pages</a></li>
@@ -51,6 +52,7 @@
             <li><i class="fas fa-search"></i></li>
         </ul>
     </nav><!-- /. main-nav -->
+
 </div><!-- /.wrapper -->
 <!-- - END nav bar - -->
 <!-- === HEADER ENDS === -->
@@ -61,7 +63,7 @@
     <div class="wrapper">
         <div class="header-text-block">
             <h1>Developing<br>Skills</h1>
-            <p>Quisque consequat justo sed sapien mollis, at placerat ligula commodo. Profin finibus quis arcu aliquam<br>egestas. Morbi mlestie elit sed ligula volutpat cursus. Sed mollis porttitor luctus.</p>
+            <p>Quisque consequat justo sed sapien mollis, at placerat ligula commodo. Profin finibus quis arcu aliquam egestas. Morbi mlestie elit sed ligula volutpat cursus. Sed mollis porttitor luctus.</p>
             <div class="button-primary">
                 <a href="">Start Learning Now !</a>
             </div>
@@ -122,7 +124,7 @@
                     <p class="course-title">Fashion Styling and Photography course</p>
                     <div class="profile-photo"></div>
                     <div class="name-block">
-                        <p class="name">Cedric Chapman</p>
+                        <p class="name">Cedric Capman</p>
                         <a><p>View profile</p></a>
                     </div>
                 </div>
@@ -157,7 +159,7 @@
             <div class="course">
                 <img src="./assets/learning.jpg" alt="person learning in a cafe">
                 <div class="course-text-block clearfix">
-                    <p class="course-title">Learn English with<br> wesites</p>
+                    <p class="course-title">Learn English with wesites</p>
                     <div class="profile-photo"></div>
                     <div class="name-block">
                         <p class="name">Henry Cary</p>
@@ -632,6 +634,21 @@
 
 <!-- - END copywright bar - -->
 <!-- === FOOTER ENDS === -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function () {
+        $('.burger-bar').on('click', function () {
+            // this toggles a class of .burgerOverlay on the nav element(.main-menu)
+            $('.main-menu').toggleClass('burgerOverlay');
+
+            // puts a class of .menu-show on the ul.main-nav
+            $('.main-nav').toggleClass('menu-show');
+        })
+    });
+
+</script>
 
 </body>
 </html>

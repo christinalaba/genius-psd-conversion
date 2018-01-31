@@ -23,7 +23,8 @@ $bold: 700;
 }
 
 @mixin headerSecondry{
-    font-size: 1.802rem;
+    font-size: 1.8rem;
+    font-weight: $light;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -39,7 +40,8 @@ $bold: 700;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2rem;
-    transition: all 1s;
+    transition: all 0.5s;
+
     &:hover{
         border: 2px solid white;
         background-color: #242c42;;
@@ -55,6 +57,5 @@ $bold: 700;
     }
 
 }
-
 
 

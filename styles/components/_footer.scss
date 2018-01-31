@@ -22,9 +22,9 @@
     padding-right:50px; 
     line-height: 2.5rem;
         p{
-                span{
-                    color: $accentColor;
-                }
+            span{
+                color: $accentColor;
+            }
         }
 
         ul{
@@ -45,24 +45,40 @@
     list-style-type: none;
     padding: 0;
     line-height: 2.5rem;
-
+    
         li{
-            // transition: all 0.5s;
-                a{
-                    text-decoration: none;
-                    color: white;
+            display: flex;
+            transition: all 2s;
+            a{
+                text-decoration: none;
+                color: white;
+                display: block;
+            }
+
+            &:before {
+                content: "\f054";
+                font-family: FontAwesome;
+                color: $accentColor;
+                margin-right: -10px;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.5s;   
+            }
+
+            &:hover {
+                &:before {
+                    visibility: visible;
+                    opacity: 1;
+                    margin-right: 10px;
                 }
+                a{
+                    color: $accentColor;
+                }
+                
+            }   
         }
 }
 
-.footer-course-list li:hover :before{
-    content: "\f054";
-    font-family: FontAwesome;
-    display: inline-block;
-    color: $accentColor;
-    margin-right: 10px;
-    // transition: all 0.5s;
-}
 
 .footer-contact{
         svg{
@@ -94,9 +110,10 @@
 
 .subscribe-form{
     margin: 20px 0;
+    
         .emailSubscribe{
             border-radius: 5px;
-            min-width: 235px;
+            min-width: 230px;
             padding: 10px;
         }
         button{
@@ -105,12 +122,14 @@
             border: none;
             box-shadow: none;
             min-width: 50px;
-            padding: 10px;
+            padding: 12px;
             border-radius: 5px;
+            margin-left: 5px;
         }
 }
 
 .footer-newsletter{
+    line-height: 2.5rem;
         .subscribe-form + p{
             margin: 20px 0;
         }
@@ -141,9 +160,6 @@
             font-size: 20px;
         }
 }
-
-
-
 
 // MAIN FOOTER ENDS
 
@@ -196,7 +212,7 @@
 
 // CREDITS BAR ENDS
 
-@media (max-width:890px){
+@media (max-width:1060px){
     .footer-block {
     width: 50%;
     padding-bottom: 10px;
@@ -208,7 +224,7 @@
     }
 }
 
-@media (max-width:550px){
+@media (max-width:660px){
     .footer-block {
         width: 100%;
         float:none;

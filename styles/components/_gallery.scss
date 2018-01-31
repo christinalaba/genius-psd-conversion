@@ -40,9 +40,9 @@
     justify-content: center;
     align-items: center;
     visibility: hidden;
-    transition: all 1s ease-out;
+    transition: all 0.3s ease-out;
     opacity: 0;
-
+    
         svg{
             font-size: 30px;
             color: #363636;
@@ -50,7 +50,9 @@
  
 }
 
-.gallery-image:hover .overlay, .gallery-image:focus .overlay{
+.gallery-image:hover .overlay, 
+.gallery-image:focus .overlay
+.gallery-image:active .overlay{
     visibility: visible;
     opacity: 1;
     cursor: pointer;
@@ -62,7 +64,7 @@
     }
 }
 
-@media (max-width:450px){
+@media (max-width:550px){
     .gallery-container li{
         width: 100%;
     }
